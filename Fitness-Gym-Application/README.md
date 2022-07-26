@@ -31,7 +31,7 @@ npm run dev will fire the command nodemon src/inedx.js -e js,ejs,pug
 **Visit the application here** :
 https://magic-fitness-gym.herokuapp.com/
 
-<h1>ScreenShots<\h1>
+<h1>ScreenShots</h1>
 
 
 
