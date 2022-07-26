@@ -30,3 +30,27 @@ npm run dev will fire the command nodemon src/inedx.js -e js,ejs,pug
 
 **Visit the application here** :
 https://magic-fitness-gym.herokuapp.com/
+
+<h1>ScreenShots<\h1>
+
+
+
+
+
+![Screenshot (2)](https://user-images.githubusercontent.com/108979543/181069804-5479aebf-6dd1-4dd4-b75b-d6c5649bff61.png)
+![Screenshot (3)](https://user-images.githubusercontent.com/108979543/181069817-47141e81-c97b-4776-8349-ab383f37fcac.png)
+![Screenshot (4)](https://user-images.githubusercontent.com/108979543/181069826-20e2cf07-f6c2-4e03-83fa-9ce6f54e0434.png)
+![Screenshot (1)](https://user-images.githubusercontent.com/108979543/181069832-0ec970e4-1874-4c35-af7a-56bbd2bd01c1.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
