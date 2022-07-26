@@ -1,0 +1,134 @@
+/* CSS */
+
+
+main {
+    min-height: 90vh;
+    position: relative;
+}
+
+main::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: url("../images/purchased-bg.webp") no-repeat center center/cover;
+    min-height: inherit;
+    width: 100%;
+    filter: blur(2px);
+    z-index: -1;
+}
+
+.purchases {
+    display: grid;
+    place-content: center;
+    width: 75vw;
+    margin: auto;
+    padding: 1rem 0;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 2rem;
+}
+
+.box {
+    padding: 1rem;
+    margin: 1rem 0;
+    border: 1px solid #fff;
+    position: relative;
+    background: rgba(0, 0, 0, 0.55);
+    overflow: hidden;
+    line-height: 1.9rem;
+    width: 97%;
+}
+
+.heading {
+    color: #fff;
+    font-size: 2rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid #fff;
+    font-weight: 400;
+}
+
+.content {
+    font-size: 1.3rem;
+    color: #fff;
+}
+
+.right {
+    color: #fff;
+    position: absolute;
+    font-size: 1.3rem;
+    bottom: 1%;
+    right: 1%;
+    text-shadow: 0 0 3px #fff;
+}
+
+form {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+}
+
+.btn {
+    font-family: 'Genos', cursive;
+    font-size: 1rem;
+    outline: none;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    border: 2px solid white;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.5s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.75);
+    color: #000;
+    border: 2px solid #000;
+    box-shadow: 0 0 6px -1px #fff;
+}
+
+
+@media screen and (max-width:1000px) {
+    main::before {
+        background: url("../images/purchased-bg2.webp") no-repeat center center/cover;
+    }
+
+    .purchases {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        width: 100%;
+    }
+
+    .box:nth-last-child(1) {
+        margin-bottom: 3rem;
+    }
+
+    .box {
+        line-height: 1.5rem;
+    }
+
+    .heading {
+        font-size: 1.8rem;
+    }
+
+    .content {
+        font-size: 1rem;
+    }
+
+    .right {
+        font-size: 1rem;
+        color: #fff;
+    }
+
+    form {
+        bottom: 0.5rem;
+        right: 0.5rem;
+    }
+
+    .btn {
+        font-size: 0.8rem;
+    }
+}

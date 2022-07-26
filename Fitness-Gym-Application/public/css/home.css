@@ -1,0 +1,137 @@
+/* CSS Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+}
+
+/* Main Section */
+
+main {
+    min-height: 90vh;
+    font-weight: 500;
+}
+
+#main {
+    min-height: 45vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: -1;
+    background: url("../images/home-bg.webp") no-repeat center center/cover;
+    position: relative;
+    top: 0;
+}
+
+.container {
+    width: 11%;
+    border-radius: 50%;
+    transition: all 0.5s;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.container:hover {
+    filter: invert(100%);
+}
+
+.heading {
+    font-size: 4rem;
+    color: #fff;
+    text-shadow: 0 0 0.75rem #000, 0 0 1rem #fff;
+    transition: all 0.5s;
+}
+
+
+.sub-heading {
+    font-size: 1.5rem;
+    color: #fff;
+    text-shadow: 0 0 0.2rem #000, 0 0 0.25rem #fff;
+}
+
+/* Faciltites  Section*/
+
+#services {
+    min-height: 45vh;
+    background: #fff;
+}
+
+.header {
+    font-size: 3rem;
+    padding: 1rem 0;
+}
+
+.options {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+}
+
+.step {
+    border: 2px solid white;
+    border-radius: 1rem;
+    margin: 0 1.5rem;
+    background-color: var(--pitch-black);
+    box-shadow: 0px 0px 19px 0px #000;
+}
+
+.step p {
+    text-shadow: 0px 0px 4px white;
+    color: #fff;
+}
+
+.step img {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 12%;
+    filter: invert(1);
+}
+
+@media screen and (max-width:1000px) {
+
+    /* Main Section */
+    .container {
+        width: 30%;
+    }
+
+    .heading {
+        font-size: 2rem;
+        color: #fff;
+    }
+
+    /* Services Section */
+
+    .options {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .header {
+        font-size: 2rem;
+        padding: 0.5rem 0;
+    }
+
+    .sub-heading {
+        color: #fff;
+        font-size: 1rem;
+    }
+
+    .step {
+        margin: 1rem;
+        padding: 0.5rem;
+        box-shadow: 0 0 7px 0px #000;
+    }
+
+    .step img {
+        width: 8rem;
+        height: 8rem;
+    }
+}
